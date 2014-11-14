@@ -1,0 +1,20 @@
+<div class="main">
+<table width="100%">
+<tr>
+<td width="80%"><h1>App Title</h1></td>
+<td width="20%"><%= render 'form' %></td>
+</tr>
+</table>
+<table width="100%">
+<tbody>
+<% @posts.each do |post| %>
+<tr style="border-top:1px solid">
+<td class="body" colspan="2" style="border-top:1px solid"><%= post.body %></td>
+</tr><tr>
+<td class="created_at" align="right" width="95%"><%= link_to post.created_at, post %></td>
+<td class="deltw" align="left"><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>
+<% end %>
+</tbody>
+</table>
+</div>

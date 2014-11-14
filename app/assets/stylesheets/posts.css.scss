@@ -1,0 +1,77 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@mixin radius($size) {
+	-webkit-border-radius: $size;
+	-moz-border-radius: $size;
+	-khtml-border-radius: $size;
+	border-radius: $size;
+}
+ 
+.main {
+	padding: 50px;
+	margin: 0 auto;
+	width:900px;
+	aligin:center;
+	background: #FFFFFF;
+	opacity: 0.9;
+	color: #555555;
+ 
+@include radius(16px);
+ 
+.field {
+	textarea {
+		border: 1px solid #969696;
+		@include radius(4px);
+	}
+}
+.actions {
+	input {
+		&:hover {
+			cursor: pointer;
+			background-color: #969696;
+		}
+		border: 1px solid #CCC;
+		padding: 5px 10px;
+		color: #FFF;
+		background-color: #3b982b;
+		@include radius(8px);
+		}
+	}
+	table {
+		margin-top: 20px;
+		tr {
+			height: 30px;
+			border: 2px solid #555;
+		}
+		.destroy a {
+			text-decoration: none;
+			background-color: #b94a48;
+			color: #FFF;
+			padding: 2px;
+			@include radius(8px);
+		}
+	}
+	a {
+		color: #969696;
+		&:visited {
+			color: #666;
+		}
+		&:hover {
+			color: #000000;
+			background-color: #77AAFF;
+		}
+	}
+}
+.deltw{
+	a {
+		padding:1px;
+		color : #969696;
+		&:hover {
+			padding:1px;
+			color: #000000;
+			background-color: #FF5555;
+			@include radius(8px);
+		}
+	}
+}
