@@ -45,3 +45,6 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'sorcery'
+gem 'bootstrap-will_paginate', '0.0.9'
+gem 'will_paginate', '~> 3.0'
+gem 'kaminari'

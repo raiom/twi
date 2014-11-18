@@ -9,7 +9,7 @@
 }
  
 .main {
-	padding: 50px;
+	padding: 10px 50px;
 	margin: 0 auto;
 	width:900px;
 	aligin:center;
@@ -29,14 +29,25 @@
 	input {
 		&:hover {
 			cursor: pointer;
-			background-color: #969696;
+			background-color: #99BBFF;
 		}
+		&:focus {
+   		 	border: 1px solid #EEA34A;
+		}
+		font-size:1.1em;
+		font-weight:bold;
 		border: 1px solid #CCC;
-		padding: 5px 10px;
+		padding: 8px 12px;
+		margin:2px;
 		color: #FFF;
-		background-color: #3b982b;
+		background-color: #66AAFF;
 		@include radius(8px);
 		}
+	}
+	textarea {
+		background-color:#DDEEFF;
+		color:#333333;
+		border: 1px solid #66AAFF;
 	}
 	table {
 		margin-top: 20px;
@@ -58,8 +69,10 @@
 			color: #666;
 		}
 		&:hover {
+			padding: 1px;
 			color: #000000;
 			background-color: #77AAFF;
+			@include radius(8px);
 		}
 	}
 }
@@ -74,4 +87,7 @@
 			@include radius(8px);
 		}
 	}
+}
+table,tr,th {
+	padding:5px;
 }
