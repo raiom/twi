@@ -14,7 +14,7 @@
 <tr style="border-top:1px solid">
 <td class="body" colspan="2" style="border-top:1px solid #66AAFF;"><%= post.body %></td>
 </tr><tr>
-<td class="created_at" align="right" width="95%"><%= link_to post.created_at, post %></td>
+<td class="created_at" align="right" width="95%"><%= link_to post.created_at.to_formatted_s(:without_second), post %></td>
 <td class="deltw" align="left"><%= link_to 'Del', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 </tr>
 <% end %>
